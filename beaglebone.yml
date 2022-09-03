@@ -11,8 +11,8 @@ target:
 repos:
 
   poky:
-    url: https://git.yoctoproject.org/git/poky
-    refspec: master
+    url: git@github.com:lyctw/poky.git # https://git.yoctoproject.org/git/poky
+    refspec: beaglebone-dev
     layers:
       meta:
       meta-poky:
@@ -25,6 +25,10 @@ repos:
       meta-oe:
       meta-networking:
       meta-python:
+
+  meta-observability:
+    url: https://github.com/ce-bu/meta-observability.git
+    refspec: honister
 
   sstate-cache:
     path: /work/sstate-cache
